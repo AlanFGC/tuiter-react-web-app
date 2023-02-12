@@ -8,7 +8,7 @@
     <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
     <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
-<body class="container-fluid">
+<body class="container">
 
 <h1 style="display: none">
     Explore
@@ -18,47 +18,54 @@
     <navbar class="col-md-2">
         <ul class="list-group">
             <li class="list-group-item list-group-item-action">
-                <i class="fas fa-square"></i>
+                <i class="fab fa-twitter "></i>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                <i class="fas fa-home"></i>
+                <a>Home</a>
+            </li>
+            <li class="list-group-item list-group-item-action active">
+                <i class="fas fa-hashtag"></i>
                 <a>Explore</a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <i class="fas fa-square "></i>
+                <i class="fas fa-bell "></i>
                 <a>Notifications</a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <i class="fas fa-square "></i>
+                <i class="fas fa-envelope "></i>
                 <a>Messages</a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <i class="fas fa-square "></i>
+                <i class="fas fa-bookmark "></i>
                 <a>Bookmarks</a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <i class="fas fa-square"></i>
+                <i class="fas fa-list"></i>
                 <a>Lists</a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <i class="fas fa-square "></i>
+                <i class="fas fa-user "></i>
                 <a>Profile</a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <i class="fas fa-square "></i>
+                <i class="fas fa-plus-circle "></i>
                 <a>More</a>
             </li>
         </ul>
         <button class="btn btn-primary rounded-pill w-100 mt-2"> Tweet</button>
     </navbar>
 
-
-    <section class="col-md-8" id="main-content">
+    <section class="col-md-6" id="main-content">
         <div class="d-flex align-items-center">
             <div class="input-group rounded-pill border overflow-hidden  me-5">
                 <button class="btn btn-outline-secondary border-0" type="button">
                     <i class="fa fa-search"></i>
                 </button>
-                <input class="form-control border-0 me-3" type="text" value="search" id="example-search-input">
+                <input class="form-control border-0 me-3 form-control-color" type="text" placeholder="Search twitter"
+                       id="example-search-input">
             </div>
-                <i class="fa fa-cog " style="font-size: 1.6em; color: blue"></i>
+            <i class="fa fa-cog " style="font-size: 1.6em; color: blue"></i>
         </div>
         <div id="tabs" class="mt-2">
             <ul class="nav nav-tabs">
@@ -76,62 +83,136 @@
                 </li>
             </ul>
         </div>
-        <div>
+        <div id="featured-article" class="position-relative">
             <img class="w-100" src="sample2.jpg">
-            <div class="position-relative ms-1" style="bottom: 30px">
-                <p class="fw-bold text-white">This a sample Image</p>
+            <div class="position-absolute ms-1 bottom-0">
+                <p class="display-6 fw-bold text-white ">SpaceX's starship</p>
             </div>
         </div>
-        <ul class="list-group">
-            <li class="list-group-item">
-                <div class="d-inline">
-                    <p class="d-inline">Web development</p>
-                    <h3 class="d-inline">ReactJS</h3>
-                    <i class="fa fa-sad-cry col d-inline" style="color: blue"></i>
-                    <p class="d-inline"> - 2hrs </p>
+
+        <ul class="list-group mt-2">
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <div class="d-inline" style="width: 80%">
+                    <p class="text-muted font-weight-normal fs-6">Web development</p>
+                    <h3 class="d-inline text-black fw-bold fs-6">ReactJS</h3>
+                    <i class="d-inline fa fa-check-circle col " style="color: blue"></i>
+                    <p class="d-inline text-muted"> - 2hrs </p>
                     <p>React js is a component based front-end framework</p>
+                    <p class="text-muted fs-6"> 123k tweets</p>
                 </div>
-                <img class="rounded-3 d-inline" src="sample.png">
+                <div class="text-center align-content-center" style="width: 20%">
+                    <img class="object-fit-contain rounded mt-2" src="sample.png">
+                </div>
             </li>
-            <li class="list-group-item">
-                <div class="d-inline">
-                    <p class="d-inline">Web development</p>
-                    <h3 class="d-inline">ReactJS</h3>
-                    <i class="fa fa-sad-cry col d-inline" style="color: blue"></i>
-                    <p class="d-inline"> - 2hrs </p>
-                    <p>React js is a component based front-end framework</p>
+
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <div class="d-inline" style="width: 80%">
+                    <h3 class="d-inline text-black fw-bold fs-6">Javascript</h3>
+                    <i class="d-inline fa fa-check-circle col " style="color: blue"></i>
+                    <p class="d-inline text-muted"> - 2hrs </p>
+                    <p>Javascript is a programming language tha can run on browsers as well as desktops</p>
+                    <p class="text-muted fs-6"> 123k tweets</p>
                 </div>
-                <img class="rounded-3 d-inline" src="sample.png">
+                <div class="text-center align-content-center" style="width: 20%">
+                    <img class="object-fit-contain rounded mt-2" src="sample.png">
+                </div>
             </li>
-            <li class="list-group-item">
-                <div class="d-inline">
-                    <p class="d-inline">Web development</p>
-                    <h3 class="d-inline">ReactJS</h3>
-                    <i class="fa fa-sad-cry col d-inline" style="color: blue"></i>
-                    <p class="d-inline"> - 2hrs </p>
-                    <p>React js is a component based front-end framework</p>
+
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <div class="d-inline" style="width: 80%">
+                    <p class="text-muted font-weight-normal fs-6">Web Development</p>
+                    <h3 class="d-inline text-black fw-bold fs-6">JQuery</h3>
+                    <i class="d-inline fa fa-check-circle col " style="color: blue"></i>
+                    <p class="d-inline text-muted"> - 2hrs </p><br>
+                    <p class="text-muted fs-6"> 123k tweets</p>
                 </div>
-                <div class="d-inline">
-                    <img class="rounded-3 " src="sample.png">
+                <div class="text-center align-content-center" style="width: 20%">
+                    <img class="object-fit-contain rounded mt-2" src="sample.png">
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <div class="d-inline" style="width: 80%">
+                    <p class="text-muted font-weight-normal fs-6">Web Development</p>
+                    <h3 class="d-inline text-black fw-bold fs-6">NodeJS</h3>
+                    <i class="d-inline fa fa-check-circle col " style="color: blue"></i>
+                    <p class="d-inline text-muted"> - 2hrs </p><br>
+                    <p class="text-muted fs-6"> 123k tweets</p>
+                </div>
+                <div class="text-center align-content-center" style="width: 20%">
+                    <img class="object-fit-contain rounded mt-2" src="sample.png">
                 </div>
             </li>
         </ul>
+
     </section>
 
-    <aside class="col-md-2" id="recommended">
+    <aside class="col-md-4 list-group" id="recommended">
         <ul>
-            <li><h2>Who to follow</h2></li>
-            <li>
-                <div class="d-inline"><img src="sample.png"></div>
-                <div class="d-inline">
-                    <p class="" href="#">Some title here</p>
-                    <i class="fa fa-sad-cry col d-inline"></i>
-                    <p class="">@Java</p>
+            <li class="list-group-item"><h2 class="fw-bold fs-5">Who to follow</h2></li>
+
+
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <img class="object-fit-scale rounded" style="width: 25%; height: 25%" src="sample.png">
+                <div class="d-inline ms-2" style="width: 60%">
+                    <p class="fs-6 d-inline fw-bold" href="#">Java</p>
+                    <i class="fa fa-check-circle fs-6 d-inline"></i><br>
+                    <p class="fs-6">@Java</p>
                 </div>
-                <div class="d-inline">
-                    <button class="btn btn-primary rounded-pill"> FOLLOW</button>
+                <div class="">
+                    <button class="btn btn-primary rounded-pill">Follow</button>
                 </div>
             </li>
+
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <img class="object-fit-scale rounded" style="width: 25%; height: 25%" src="sample.png">
+                <div class="d-inline ms-2" style="width: 60%">
+                    <p class="fs-6 d-inline fw-bold" href="#">Relativity Space</p>
+                    <i class="fa fa-check-circle fs-6 d-inline"></i><br>
+                    <p class="fs-6">@relativityspace</p>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary rounded-pill">Follow</button>
+                </div>
+            </li>
+
+
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <img class="object-fit-scale rounded" style="width: 25%; height: 25%" src="sample.png">
+                <div class="d-inline ms-2" style="width: 60%">
+                    <p class="fs-6 d-inline fw-bold" href="#">Virgin Galactic</p>
+                    <i class="fa fa-check-circle fs-6 d-inline"></i><br>
+                    <p class="fs-6">@virgingalactic</p>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary rounded-pill">Follow</button>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <img class="object-fit-scale rounded" style="width: 25%; height: 25%" src="sample.png">
+                <div class="d-inline ms-2" style="width: 60%">
+                    <p class="fs-6 d-inline fw-bold" href="#">Nasa</p>
+                    <i class="fa fa-check-circle fs-6 d-inline"></i><br>
+                    <p class="fs-6">@nasa</p>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary rounded-pill">Follow</button>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <img class="object-fit-scale rounded" style="width: 25%; height: 25%" src="sample.png">
+                <div class="d-inline ms-2" style="width: 60%">
+                    <p class="fs-6 d-inline fw-bold" href="#">Tesla</p>
+                    <i class="fa fa-check-circle fs-6 d-inline"></i><br>
+                    <p class="fs-6">@Tesla</p>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary rounded-pill">Follow</button>
+                </div>
+            </li>
+
+
         </ul>
     </aside>
 
