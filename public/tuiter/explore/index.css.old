@@ -1,0 +1,144 @@
+body {
+    margin: 20px;
+    background-color: black;
+    max-width: 800px;
+
+}
+
+h1 {
+    display: none;
+}
+
+
+.border-blue {
+    border-color: rgb(47, 51, 54);
+    border-width: medium;
+    border-radius: 30px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p {
+    color: rgb(110, 118, 125);
+    display: inline-block;
+}
+
+
+.searchbar-section{
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    flex-direction: row;
+}
+.searchbar-section input{
+    background-color: darkgray;
+    border-radius: 18px;
+    border-color: darkgray;
+    margin-left: 0px;
+    font-size: 1.5em;
+    width: 90%;
+    height: 50%;
+}
+
+.searchbar-section input::placeholder{
+    font-size: .9em;
+    color: white;
+    padding: 12px;
+}
+
+.searchbar-section a{
+    height: 100%;
+    padding: 0;
+    margin-left: 40px;
+    margin-top: 4px;
+    color: rgb(29, 161, 242);
+    font-size: 1.5em;
+}
+
+.spacer-gray{
+    width: 100%;
+    height: 30px;
+    background-color: darkgray;
+}
+
+.menu-links{
+    margin-top: 10px;
+    height: 60px;
+}
+
+.menu-links a{
+    font-size: 1.6em;
+    padding: 20px;
+}
+
+.menu-links-unselected{
+    color: darkgray;
+}
+
+.selected{
+    color: rgb(29, 161, 242);
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: rgb(29, 161, 242);
+}
+
+.tuit{
+    position: relative;
+}
+
+
+
+.tuit div{
+    display: inline-block;
+    height: 120px;
+}
+
+
+.tuit i{
+    position: absolute;
+    top: 18px;
+    right: 16px;
+    font-size: 19px;
+    color: lightgray;
+}
+.tuit img{
+    border-radius: 18px;
+    position: absolute;
+    top: 30px;
+    right: 16px;
+}
+
+.tuit-text{
+    width: 75%;
+}
+
+
+.user-tag{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+}
+
+.top-line {
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: darkgray;
+}
+
+.bottom-line{
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: darkgray;
+}
