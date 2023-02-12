@@ -15,48 +15,48 @@
 </h1>
 
 <div class="row">
-    <navbar class="col-md-2">
+    <navbar class="col-sm-2 col-m-3 col-lg-1 col-xxl-2 ">
         <ul class="list-group">
             <li class="list-group-item list-group-item-action">
-                <i class="fab fa-twitter "></i>
+                <i class="fab fa-twitter"></i>
             </li>
-            <li class="list-group-item list-group-item-action">
+            <li class="list-group-item list-group-item-action ">
                 <i class="fas fa-home"></i>
-                <a>Home</a>
+                <a class="d-none d-xxl-inline fst-normal text-black text-decoration-none">Home</a>
             </li>
             <li class="list-group-item list-group-item-action active">
                 <i class="fas fa-hashtag"></i>
-                <a>Explore</a>
+                <a class="d-none d-xxl-inline text-white text-decoration-none" >Explore</a>
             </li>
             <li class="list-group-item list-group-item-action">
                 <i class="fas fa-bell "></i>
-                <a>Notifications</a>
+                <a class="d-none d-xxl-inline text-black text-decoration-none" >Notifications</a>
             </li>
             <li class="list-group-item list-group-item-action">
                 <i class="fas fa-envelope "></i>
-                <a>Messages</a>
+                <a class="d-none d-xxl-inline text-black text-decoration-none" >Messages</a>
             </li>
             <li class="list-group-item list-group-item-action">
                 <i class="fas fa-bookmark "></i>
-                <a>Bookmarks</a>
+                <a class="d-none d-xxl-inline text-black text-decoration-none" >Bookmarks</a>
             </li>
             <li class="list-group-item list-group-item-action">
                 <i class="fas fa-list"></i>
-                <a>Lists</a>
+                <a class="d-none d-xxl-inline text-black text-decoration-none">Lists</a>
             </li>
             <li class="list-group-item list-group-item-action">
                 <i class="fas fa-user "></i>
-                <a>Profile</a>
+                <a class="d-none d-xxl-inline text-black text-decoration-none">Profile</a>
             </li>
-            <li class="list-group-item list-group-item-action">
-                <i class="fas fa-plus-circle "></i>
-                <a>More</a>
+            <li class="list-group-item list-group-item-action container">
+                <i class="fas fa-plus-circle"></i>
+                <a class="d-none d-xxl-inline text-black text-decoration-none">More</a>
             </li>
         </ul>
         <button class="btn btn-primary rounded-pill w-100 mt-2"> Tweet</button>
     </navbar>
 
-    <section class="col-md-6" id="main-content">
+    <section class="col-sm-10 col-m-9 col-lg-7 col-xxl-6" id="main-content">
         <div class="d-flex align-items-center">
             <div class="input-group rounded-pill border overflow-hidden  me-5">
                 <button class="btn btn-outline-secondary border-0" type="button">
@@ -65,21 +65,24 @@
                 <input class="form-control border-0 me-3 form-control-color" type="text" placeholder="Search twitter"
                        id="example-search-input">
             </div>
-            <i class="fa fa-cog " style="font-size: 1.6em; color: blue"></i>
+            <i class="fa fa-cog text-primary" style="font-size: 1.6em;"></i>
         </div>
         <div id="tabs" class="mt-2">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    <a class="nav-link active" aria-current="page" href="#">For you</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Trending</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entertainment</a>
                 </li>
             </ul>
         </div>
@@ -95,7 +98,7 @@
                 <div class="d-inline" style="width: 80%">
                     <p class="text-muted font-weight-normal fs-6">Web development</p>
                     <h3 class="d-inline text-black fw-bold fs-6">ReactJS</h3>
-                    <i class="d-inline fa fa-check-circle col " style="color: blue"></i>
+                    <i class="d-inline fa fa-check-circle col text-primary" ></i>
                     <p class="d-inline text-muted"> - 2hrs </p>
                     <p>React js is a component based front-end framework</p>
                     <p class="text-muted fs-6"> 123k tweets</p>
@@ -108,7 +111,7 @@
             <li class="list-group-item d-flex justify-content-start align-content-center">
                 <div class="d-inline" style="width: 80%">
                     <h3 class="d-inline text-black fw-bold fs-6">Javascript</h3>
-                    <i class="d-inline fa fa-check-circle col " style="color: blue"></i>
+                    <i class="d-inline fa fa-check-circle col text-primary" ></i>
                     <p class="d-inline text-muted"> - 2hrs </p>
                     <p>Javascript is a programming language tha can run on browsers as well as desktops</p>
                     <p class="text-muted fs-6"> 123k tweets</p>
@@ -122,7 +125,7 @@
                 <div class="d-inline" style="width: 80%">
                     <p class="text-muted font-weight-normal fs-6">Web Development</p>
                     <h3 class="d-inline text-black fw-bold fs-6">JQuery</h3>
-                    <i class="d-inline fa fa-check-circle col " style="color: blue"></i>
+                    <i class="d-inline fa fa-check-circle col text-primary" ></i>
                     <p class="d-inline text-muted"> - 2hrs </p><br>
                     <p class="text-muted fs-6"> 123k tweets</p>
                 </div>
@@ -134,7 +137,7 @@
                 <div class="d-inline" style="width: 80%">
                     <p class="text-muted font-weight-normal fs-6">Web Development</p>
                     <h3 class="d-inline text-black fw-bold fs-6">NodeJS</h3>
-                    <i class="d-inline fa fa-check-circle col " style="color: blue"></i>
+                    <i class="d-inline fa fa-check-circle col text-primary "></i>
                     <p class="d-inline text-muted"> - 2hrs </p><br>
                     <p class="text-muted fs-6"> 123k tweets</p>
                 </div>
@@ -146,13 +149,13 @@
 
     </section>
 
-    <aside class="col-md-4 list-group" id="recommended">
+    <aside class="d-none d-lg-block col-lg-4 col-xxl-4 list-group" id="recommended">
         <ul>
             <li class="list-group-item"><h2 class="fw-bold fs-5">Who to follow</h2></li>
 
 
             <li class="list-group-item d-flex justify-content-start align-content-center">
-                <img class="object-fit-scale rounded" style="width: 25%; height: 25%" src="sample.png">
+                <img class="object-fit-scale rounded" style="width: 20%; height: 20%" src="sample.png">
                 <div class="d-inline ms-2" style="width: 60%">
                     <p class="fs-6 d-inline fw-bold" href="#">Java</p>
                     <i class="fa fa-check-circle fs-6 d-inline"></i><br>
@@ -164,7 +167,7 @@
             </li>
 
             <li class="list-group-item d-flex justify-content-start align-content-center">
-                <img class="object-fit-scale rounded" style="width: 25%; height: 25%" src="sample.png">
+                <img class="object-fit-scale rounded" style="width: 20%; height: 20%" src="sample.png">
                 <div class="d-inline ms-2" style="width: 60%">
                     <p class="fs-6 d-inline fw-bold" href="#">Relativity Space</p>
                     <i class="fa fa-check-circle fs-6 d-inline"></i><br>
@@ -177,7 +180,7 @@
 
 
             <li class="list-group-item d-flex justify-content-start align-content-center">
-                <img class="object-fit-scale rounded" style="width: 25%; height: 25%" src="sample.png">
+                <img class="object-fit-scale rounded" style="width: 20%; height: 20%" src="sample.png">
                 <div class="d-inline ms-2" style="width: 60%">
                     <p class="fs-6 d-inline fw-bold" href="#">Virgin Galactic</p>
                     <i class="fa fa-check-circle fs-6 d-inline"></i><br>
@@ -189,7 +192,7 @@
             </li>
 
             <li class="list-group-item d-flex justify-content-start align-content-center">
-                <img class="object-fit-scale rounded" style="width: 25%; height: 25%" src="sample.png">
+                <img class="object-fit-scale rounded" style="width: 20%; height: 20%" src="sample.png">
                 <div class="d-inline ms-2" style="width: 60%">
                     <p class="fs-6 d-inline fw-bold" href="#">Nasa</p>
                     <i class="fa fa-check-circle fs-6 d-inline"></i><br>
@@ -201,7 +204,7 @@
             </li>
 
             <li class="list-group-item d-flex justify-content-start align-content-center">
-                <img class="object-fit-scale rounded" style="width: 25%; height: 25%" src="sample.png">
+                <img class="object-fit-scale rounded" style="width: 20%; height: 20%" src="sample.png">
                 <div class="d-inline ms-2" style="width: 60%">
                     <p class="fs-6 d-inline fw-bold" href="#">Tesla</p>
                     <i class="fa fa-check-circle fs-6 d-inline"></i><br>
