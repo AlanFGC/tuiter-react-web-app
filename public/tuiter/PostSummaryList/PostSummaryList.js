@@ -3,7 +3,7 @@ import PostSummaryListItem from "./PostSummaryListItem.js";
 
 export default function PostSummaryList () {
 return(`
-<ul class="list-group mt-2">
+<ul class="list-group mt-2 container">
             ${posts.map(post => {
                 
             return PostSummaryListItem(post)}).join('')}

@@ -1,6 +1,6 @@
 const Post = [
     {
-        usernameImage:"face.png",
+        usernameImage:"face.jpg",
         name:"Elon Musk",
         username: "elonmusk",
         time:"2h",
@@ -13,7 +13,7 @@ const Post = [
         likes: "2k"
     },
     {
-        usernameImage:"face.png",
+        usernameImage:"face.jpg",
         name:"Elon Musk",
         username: "elonmusk",
         time:"2h",
@@ -26,7 +26,7 @@ const Post = [
         likes: "2k"
     },
     {
-        usernameImage: "face.png",
+        usernameImage: "face.jpg",
         name:"Elon Musk",
         username: "elonmusk",
         time:"2h",
