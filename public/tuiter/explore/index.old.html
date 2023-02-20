@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tuiter</title>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="container">
+
+<h1 style="display: none">
+    Explore
+</h1>
+
+<div class="row">
+    <navbar class="col-sm-2 col-m-3 col-lg-1 col-xxl-2 ">
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action">
+                <i class="fas fa-at"></i>
+            </li>
+            <li class="list-group-item list-group-item-action ">
+                <i class="fas fa-home"></i>
+                <a class="d-none d-xxl-inline fst-normal text-black text-decoration-none">Home</a>
+            </li>
+            <li class="list-group-item list-group-item-action selected">
+                <i class="fas fa-hashtag"></i>
+                <a class="d-none d-xxl-inline text-decoration-none selected" >Explore</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                <i class="fas fa-bell "></i>
+                <a class="d-none d-xxl-inline text-black text-decoration-none" >Notifications</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                <i class="fas fa-envelope "></i>
+                <a class="d-none d-xxl-inline text-black text-decoration-none" >Messages</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                <i class="fas fa-bookmark "></i>
+                <a class="d-none d-xxl-inline text-black text-decoration-none" >Bookmarks</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                <i class="fas fa-list"></i>
+                <a class="d-none d-xxl-inline text-black text-decoration-none">Lists</a>
+            </li>
+            <li class="list-group-item list-group-item-action">
+                <i class="fas fa-user "></i>
+                <a class="d-none d-xxl-inline text-black text-decoration-none">Profile</a>
+            </li>
+            <li class="list-group-item list-group-item-action container">
+                <i class="fas fa-plus-circle"></i>
+                <a class="d-none d-xxl-inline text-black text-decoration-none">More</a>
+            </li>
+        </ul>
+        <button class="btn btn-primary rounded-pill w-100 mt-2 tweet-btn"> Tweet</button>
+    </navbar>
+
+    <section class="col-sm-10 col-m-9 col-lg-7 col-xxl-6" id="main-content">
+        <div class="d-flex align-items-center">
+            <div class="input-group rounded-pill border overflow-hidden  me-5 tweet-background-gray">
+                <button class="btn btn-outline-secondary border-0 tweet-background-gray" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+                <input class="form-control border-0 me-3 tweet-background-gray" type="text" placeholder="Search twitter"
+                       id="example-search-input">
+            </div>
+            <i class="fa fa-cog text-black" style="font-size: 1.6em;"></i>
+        </div>
+        <div id="tabs" class="mt-2">
+            <ul class="nav nav-tabs">
+                <li class="nav-item tweeter-border">
+                    <a class="nav-link active text-black " aria-current="page" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#">Entertainment</a>
+                </li>
+            </ul>
+        </div>
+        <div id="featured-article" class="position-relative">
+            <img class="w-100" src="sample2.jpg">
+            <div class="position-absolute ms-1 bottom-0">
+                <p class="display-6 fw-bold text-white ">SpaceX's starship</p>
+            </div>
+        </div>
+
+        <ul class="list-group mt-2">
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <div class="d-inline" style="width: 80%">
+                    <p class="text-muted font-weight-normal fs-6">Web development</p>
+                    <h3 class="d-inline text-black fw-bold fs-6">ReactJS</h3>
+                    <i class="d-inline fa fa-check-circle col text-primary" ></i>
+                    <p class="d-inline text-muted"> - 2hrs </p>
+                    <p>React js is a component based front-end framework</p>
+                    <p class="text-muted fs-6"> 123k tweets</p>
+                </div>
+                <div class="text-center align-content-center" style="width: 20%">
+                    <img class="object-fit-contain rounded mt-2" src="sample.png">
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <div class="d-inline" style="width: 80%">
+                    <h3 class="d-inline text-black fw-bold fs-6">Javascript</h3>
+                    <i class="d-inline fa fa-check-circle col text-primary" ></i>
+                    <p class="d-inline text-muted"> - 2hrs </p>
+                    <p>Javascript is a programming language tha can run on browsers as well as desktops</p>
+                    <p class="text-muted fs-6"> 123k tweets</p>
+                </div>
+                <div class="text-center align-content-center" style="width: 20%">
+                    <img class="object-fit-contain rounded mt-2" src="sample.png">
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <div class="d-inline" style="width: 80%">
+                    <p class="text-muted font-weight-normal fs-6">Web Development</p>
+                    <h3 class="d-inline text-black fw-bold fs-6">JQuery</h3>
+                    <i class="d-inline fa fa-check-circle col text-primary" ></i>
+                    <p class="d-inline text-muted"> - 2hrs </p><br>
+                    <p class="text-muted fs-6"> 123k tweets</p>
+                </div>
+                <div class="text-center align-content-center" style="width: 20%">
+                    <img class="object-fit-contain rounded mt-2" src="sample.png">
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-start align-content-center">
+                <div class="d-inline" style="width: 80%">
+                    <p class="text-muted font-weight-normal fs-6">Web Development</p>
+                    <h3 class="d-inline text-black fw-bold fs-6">NodeJS</h3>
+                    <i class="d-inline fa fa-check-circle col text-primary "></i>
+                    <p class="d-inline text-muted"> - 2hrs </p><br>
+                    <p class="text-muted fs-6"> 123k tweets</p>
+                </div>
+                <div class="text-center align-content-center" style="width: 20%">
+                    <img class="object-fit-contain rounded mt-2" src="sample.png">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <aside class="d-none d-lg-block col-lg-4 col-xxl-4 list-group " id="recommended">
+        <ul class="rounded-3 rounded-corners-all-around tweet-background-gray p-0 overflow-hidden">
+            <li class="list-group-item tweet-background-gray border-0"><h2 class="fw-bold fs-5 mx-0 ">Who to follow</h2></li>
+
+
+            <li class="list-group-item d-flex justify-content-start align-content-center tweet-background-gray">
+                <img class="object-fit-scale rounded" style="width: 20%; height: 20%" src="sample.png">
+                <div class="d-inline ms-2" style="width: 60%">
+                    <p class="fs-6 d-inline fw-bold" href="#">Java</p>
+                    <i class="fa fa-check-circle fs-6 d-inline tweeter-color"></i><br>
+                    <p class="fs-6">@Java</p>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary rounded-pill bg-black">Follow</button>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-start align-content-center tweet-background-gray">
+                <img class="object-fit-scale rounded" style="width: 20%; height: 20%" src="sample.png">
+                <div class="d-inline ms-2" style="width: 60%">
+                    <p class="fs-6 d-inline fw-bold" href="#">Relativity Space</p>
+                    <i class="fa fa-check-circle fs-6 d-inline tweeter-color"></i><br>
+                    <p class="fs-6">@relativityspace</p>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary rounded-pill bg-black">Follow</button>
+                </div>
+            </li>
+
+
+            <li class="list-group-item d-flex justify-content-start align-content-center tweet-background-gray">
+                <img class="object-fit-scale rounded" style="width: 20%; height: 20%" src="sample.png">
+                <div class="d-inline ms-2" style="width: 60%">
+                    <p class="fs-6 d-inline fw-bold" href="#">Virgin Galactic</p>
+                    <i class="fa fa-check-circle fs-6 d-inline tweeter-color"></i><br>
+                    <p class="fs-6">@virgingalactic</p>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary rounded-pill bg-black">Follow</button>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-start align-content-center tweet-background-gray">
+                <img class="object-fit-scale rounded" style="width: 20%; height: 20%" src="sample.png">
+                <div class="d-inline ms-2" style="width: 60%">
+                    <p class="fs-6 d-inline fw-bold " href="#">Nasa</p>
+                    <i class="fa fa-check-circle fs-6 d-inline tweeter-color"></i><br>
+                    <p class="fs-6">@nasa</p>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary rounded-pill bg-black">Follow</button>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-start align-content-center tweet-background-gray">
+                <img class="object-fit-scale rounded" style="width: 20%; height: 20%" src="sample.png">
+                <div class="d-inline ms-2" style="width: 60%">
+                    <p class="fs-6 d-inline fw-bold" href="#">Tesla</p>
+                    <i class="fa fa-check-circle fs-6 d-inline tweeter-color"></i><br>
+                    <p class="fs-6">@Tesla</p>
+                </div>
+                <div class="">
+                    <button class="btn btn-primary rounded-pill bg-black">Follow</button>
+                </div>
+            </li>
+            <a class="tweeter-color text-decoration-none ms-3">show more</a>
+        </ul>
+        <p class="terms-of-services">Terms of service are the legal agreements between a service provider and a person who wants to use that service. </p>
+    </aside>
+
+</div>
+
+</body>
+</html>
