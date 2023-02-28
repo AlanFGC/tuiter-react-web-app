@@ -4,6 +4,7 @@ import "./index.css";
 const ExploreComponent = () => {
     return(
         <>
+
             <div className="row">
                 <div className="col-11 position-relative">
                     <input placeholder="Search Tuiter"
@@ -16,6 +17,7 @@ const ExploreComponent = () => {
                        bi-gear-fill fs-2 position-relative"></i>
                 </div>
             </div>
+
             <ul className="nav nav-pills mb-2">
                 <li className="nav-item">
                     <a className="nav-link active">For You</a>
@@ -30,10 +32,10 @@ const ExploreComponent = () => {
 
             <div className="position-relative mb-2">
                 <img src={require("./images/starship.webp")} alt="random space shuttle" className="w-100"/>
-
                 <h1 className="position-absolute wd-nudge-up text-white">
                     SpaceX Starship</h1>
             </div>
+
             <PostSummaryList/>
         </>
     );
