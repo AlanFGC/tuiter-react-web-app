@@ -30,8 +30,8 @@ const ExploreComponent = () => {
                 </li>
             </ul>
 
-            <div className="position-relative mb-2">
-                <img src={require("./images/starship.webp")} alt="random space shuttle" className="w-100"/>
+            <div className="position-relative w-100">
+                <img src={require("./images/starship.webp")} alt="random space shuttle" className="w-100 h-100"/>
                 <h1 className="position-absolute wd-nudge-up text-white">
                     SpaceX Starship</h1>
             </div>
