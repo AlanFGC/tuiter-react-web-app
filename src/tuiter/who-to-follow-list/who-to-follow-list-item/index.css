@@ -1,0 +1,41 @@
+.tweet-btn {
+    background-color:#1DA1F2;
+    font-weight: bold;
+    font-size: 0.9em;
+    box-shadow: 2px 2px 2px lightgray;
+    border:0px;
+}
+
+.tweeter-color{
+    color: #1DA1F2;
+}
+.selected{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.bg-black{
+    background-color: black;
+}
+
+
+.tweet-background-gray{
+    background-color: #f5f7fa;
+    overflow: hidden;
+}
+
+.terms-of-services{
+    color: gray;
+    font-size: .7em;
+}
+
+.tweeter-border{
+    border-bottom-style: solid;
+    border-color: #1DA1F2;
+    border-bottom-width: 4px;
+}
+
+.follow{
+    color: white;
+}
