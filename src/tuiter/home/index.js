@@ -1,6 +1,8 @@
+import NavigationSidebar from "../navigation-sidebar";
+
 function HomeComponent(){
     return(
-        <h1>Home Component</h1>
+        <h1>THis is home</h1>
     );
 }
 
