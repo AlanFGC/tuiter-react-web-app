@@ -1,8 +1,11 @@
-import NavigationSidebar from "../navigation-sidebar";
+import MainPostsLists from "./main-posts-lists";
 
 function HomeComponent(){
     return(
-        <h1>THis is home</h1>
+        <div>
+            <h1>Hello</h1>
+            <MainPostsLists/>
+        </div>
     );
 }
 

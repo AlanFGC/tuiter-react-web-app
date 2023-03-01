@@ -20,7 +20,6 @@ function Tuiter() {
                     <Route path="explore" element={<ExploreComponent/>}/>
                 </Routes>
             </div>
-
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                 <WhoToFollowList/>
             </div>

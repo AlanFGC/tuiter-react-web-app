@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 213,
+    "usernameImage":"face.jpg",
+    "name":"Elon Musk",
+    "username": "elonmusk",
+    "time":"2h",
+    "text": "Amazing Show Today!",
+    "image": "banner.jpg",
+    "ArticleTitle": "This is an article title",
+    "imageText": "Short text that describes the article",
+    "comments": "923",
+    "shares": "50k",
+    "likes": "2k"
+  },
+  {
+    "_id": 13124,
+    "usernameImage":"face.jpg",
+    "name":"Elon Musk",
+    "username": "elonmusk",
+    "time":"2h",
+    "text": "Amazing Show Today!",
+    "image": "banner.jpg",
+    "ArticleTitle": "This is an article title",
+    "imageText": "Short text that describes the article",
+    "comments": "923",
+    "shares": "50k",
+    "likes": "2k"
+  },
+  {
+    "_id": 4390284,
+    "usernameImage": "face.jpg",
+    "name":"Elon Musk",
+    "username": "elonmusk",
+    "time":"2h",
+    "text": "Amazing Show Today!",
+    "image": "banner.jpg",
+    "ArticleTitle": "This is an article title",
+    "imageText": "Short text that describes the article",
+    "comments": "923",
+    "shares": "50k",
+    "likes": "2k"
+  }
+]
