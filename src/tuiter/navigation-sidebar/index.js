@@ -7,78 +7,86 @@ const NavigationSidebar = () => {
     const paths = pathname.split('/')
     const active = paths[2];
     return (
-        <ul className="list-group">
+        <div className="list-group">
 
-            <li className={`list-group-item list-group-item-action ${active === 'home' ? 'active text-white' : 'text-black'}`}>
 
-                <Link to={"/tuiter/home"} className={`d-none d-xxl-inline text-decoration-none text-black ${active === 'home' ? 'active text-white fw-bold' : ''}`}>
-                    <i className="bi bi-house-fill me-1"></i>
+            <Link className={`list-group-item list-group-item-action ${active === '/' ? 'active text-white' : 'text-black'}`}>
+                <i className="bi bi-twitter me-1"></i>
+            </Link>
+
+
+            <Link to={"/tuiter/home"} className={`list-group-item list-group-item-action ${active === 'home' ? 'active text-white' : 'text-black'}`}>
+                <i className="bi bi-house-fill me-1"></i>
+                <p to={"/tuiter/home"} className={`d-none d-xxl-inline text-decoration-none text-black ${active === 'home' ? 'active text-white fw-bold' : ''}`}>
+
                     Home
-                </Link>
-            </li>
+                </p>
+            </Link>
 
-            <li className={`list-group-item list-group-item-action ${active === 'explore' ? 'active text-white' : 'text-black'}`}>
+            <Link to={"/tuiter/explore"} className={`list-group-item list-group-item-action ${active === 'explore' ? 'active text-white' : 'text-black'}`}>
+                <i className="bi bi-search me-1"></i>
+                <p to={"/tuiter/explore"} className={`d-none d-xxl-inline text-decoration-none text-black ${active === 'explore' ? 'active text-white fw-bold' : 'text-black'}`} >
 
-                <Link to={"/tuiter/explore"} className={`d-none d-xxl-inline text-decoration-none text-black ${active === 'explore' ? 'active text-white fw-bold' : 'text-black'}`} >
-                    <i className="bi bi-search me-1"></i>
                     Explore
-                </Link>
-            </li>
+                </p>
+            </Link>
 
-            <li className={`list-group-item list-group-item-action ${active === 'labs' ? 'active text-white' : 'text-black'}`}>
-                <Link className={`d-none d-xxl-inline text-decoration-none  ${active === 'labs' ? 'active text-white fw-bold' : 'text-black'}`} to={"/"}>
-                    <i className="bi bi-calculator me-1"></i>
+            <Link to={"/"} className={`list-group-item list-group-item-action ${active === 'labs' ? 'active text-white' : 'text-black'}`}>
+                <i className="bi bi-calculator me-1"></i>
+                <p to={"/"} className={`d-none d-xxl-inline text-decoration-none  ${active === 'labs' ? 'active text-white fw-bold' : 'text-black'}`} >
                     Labs
-                </Link>
-            </li>
+                </p>
+            </Link>
 
 
-            <li className={`list-group-item list-group-item-action ${active === 'notifications' ? 'active text-white' : 'text-black'}`}>
-                <Link className={`d-none d-xxl-inline text-decoration-none  ${active === 'notifications' ? 'active text-white fw-bold' : 'text-black'}`}>
-                    <i className="bi bi-bell-fill me-1"></i>
+            <Link className={`list-group-item list-group-item-action ${active === 'notifications' ? 'active text-white' : 'text-black'}`}>
+                <i className="bi bi-bell-fill me-1"></i>
+                <p className={`d-none d-xxl-inline text-decoration-none  ${active === 'notifications' ? 'active text-white fw-bold' : 'text-black'}`}>
                     Notifications
-                </Link>
-            </li>
+                </p>
+            </Link>
 
 
 
 
-            <li className={`list-group-item list-group-item-action ${active === 'messages' ? 'active text-white' : 'text-black'}`}>
-                <Link className={`d-none d-xxl-inline text-decoration-none ${active === 'messages' ? 'active text-white fw-bold' : 'text-black'}`}>
-                    <i className="bi bi-envelope-fill "></i>
+            <Link className={`list-group-item list-group-item-action ${active === 'messages' ? 'active text-white' : 'text-black'}`}>
+                <i className="bi bi-envelope-fill "></i>
+                <p className={`d-none d-xxl-inline text-decoration-none ${active === 'messages' ? 'active text-white fw-bold' : 'text-black'}`}>
                     Messages
-                </Link>
-            </li>
+                </p>
+            </Link>
 
-            <li className={`list-group-item list-group-item-action ${active === 'bookmarks' ? 'active text-white' : 'text-black'}`}>
-                <Link className={`d-none d-xxl-inline text-decoration-none  ${active === 'bookmarks' ? 'active text-white fw-bold' : 'text-black'}`}>
-                    <i className="bi bi-search me-1"></i>
+            <Link className={`list-group-item list-group-item-action ${active === 'bookmarks' ? 'active text-white' : 'text-black'}`}>
+                <i className="bi bi-search me-1"></i>
+                <p className={`d-none d-xxl-inline text-decoration-none  ${active === 'bookmarks' ? 'active text-white fw-bold' : 'text-black'}`}>
+
                     Bookmarks
-                </Link>
-            </li>
+                </p>
+            </Link>
 
-            <li className={`list-group-item list-group-item-action ${active === 'lists' ? 'active text-white' : 'text-black'}`}>
-                <Link className={`d-none d-xxl-inline text-decoration-none  ${active === 'lists' ? 'active text-white fw-bold' : 'text-black'}`}>
-                    <i className="bi bi-list me-1"></i>
+            <Link className={`list-group-item list-group-item-action ${active === 'lists' ? 'active text-white' : 'text-black'}`}>
+                <i className="bi bi-list me-1"></i>
+                <p className={`d-none d-xxl-inline text-decoration-none  ${active === 'lists' ? 'active text-white fw-bold' : 'text-black'}`}>
+
                     Lists
-                </Link>
-            </li>
+                </p>
+            </Link>
 
-            <li className={`list-group-item list-group-item-action ${active === 'profile' ? 'active text-white' : 'text-black'}`}>
+            <Link className={`list-group-item list-group-item-action ${active === 'profile' ? 'active text-white' : 'text-black'}`}>
+                <i className="bi bi-person-fill me-1"></i>
+                <p className={`d-none d-xxl-inline text-decoration-none ${active === 'profile' ? 'active text-white fw-bold' : 'text-black'}`}>
 
-                <Link className={`d-none d-xxl-inline text-decoration-none ${active === 'profile' ? 'active text-white fw-bold' : 'text-black'}`}>
-                    <i className="bi bi-person-fill me-1"></i>
                     Profile
-                </Link>
-            </li>
+                </p>
+            </Link>
 
-            <li className={`list-group-item list-group-item-action ${active === 'more' ? 'active text-white' : 'text-black'}`}>
-                <Link className={`d-none d-xxl-inline  col-md-2 text-decoration-none ${active === 'more' ? 'active text-white fw-bold' : 'text-black'}`} to={"/explore"}>
-                    <i className=" bi bi-plus me-1"></i>
+            <Link className={`list-group-item list-group-item-action ${active === 'more' ? 'active text-white' : 'text-black'}`}>
+                <i className=" bi bi-plus me-1"></i>
+                <p className={`d-none d-xxl-inline  col-md-2 text-decoration-none ${active === 'more' ? 'active text-white fw-bold' : 'text-black'}`} to={"/explore"}>
                     More
-                </Link>
-            </li>
-        </ul>
+                </p>
+            </Link>
+        </div>
     );
 };
 export default NavigationSidebar;
