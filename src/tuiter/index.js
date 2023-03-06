@@ -4,7 +4,7 @@ import ExploreComponent from "./explore-component";
 import HomeComponent from "./home";
 
 import {Routes, Route} from "react-router";
-import NotFoundPage from "./not-found-page";
+import NotFoundPage from "../not-found-page";
 
 function Tuiter() {
     return (
