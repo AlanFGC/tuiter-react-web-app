@@ -1,9 +1,13 @@
-import MainPostsLists from "./main-posts-lists";
+import TuitsList from "../tuits/tuits-item-list";
+import WhatsHappening from "./whats-happening";
+
 
 function HomeComponent(){
     return(
         <div>
-            <MainPostsLists/>
+            <h4>Home</h4>
+            <WhatsHappening/>
+            <TuitsList/>
         </div>
     );
 }

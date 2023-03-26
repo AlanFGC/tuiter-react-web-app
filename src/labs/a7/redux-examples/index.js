@@ -11,6 +11,9 @@ const store = configureStore({
     reducer: {hello, todos}
 });
 
+
+// this is where we put our components that use our redux reducers
+// they are tagged as store.
 const ReduxExamples = () => {
     return(
         <Provider store={store}>
