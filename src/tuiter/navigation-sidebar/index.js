@@ -72,7 +72,7 @@ const NavigationSidebar = () => {
                 </p>
             </Link>
 
-            <Link className={`list-group-item list-group-item-action ${active === 'profile' ? 'active text-white' : 'text-black'}`}>
+            <Link to={"/tuiter/profile"} className={`list-group-item list-group-item-action ${active === 'profile' ? 'active text-white' : 'text-black'}`}>
                 <i className="bi bi-person-fill me-1"></i>
                 <p className={`d-none d-xxl-inline text-decoration-none ${active === 'profile' ? 'active text-white fw-bold' : 'text-black'}`}>
 
