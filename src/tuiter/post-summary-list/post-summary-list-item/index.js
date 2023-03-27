@@ -22,7 +22,7 @@ const PostSummaryItem = (
                 <p className="text-muted fs-6"> {post.tweets ? post.tweets : ""}</p>
             </div>
             <div className="col col-3 pe-1 text-center align-content-center w-25">
-                <img className="rounded mt-2 w-100" src={`/images/${post.image}`}/>
+                <img className="rounded mt-2 w-100" alt="" src={`/images/${post.image}`}/>
             </div>
         </li>
 

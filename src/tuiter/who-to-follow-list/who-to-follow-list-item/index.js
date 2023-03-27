@@ -6,13 +6,11 @@ const WhoToFollowListItem = (
     }
 
 ) => {
-
-    const path = "src/tuiter/who-to-follow-list/who-to-follow-list-item/images/"
     return(
         <li className="list-group-item mt-3 border-0 ">
             <div className="row">
                 <div className="col-2">
-                    <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`}/>
+                    <img className="rounded-circle" alt="" height={48} src={`/images/${who.avatarIcon}`}/>
                 </div>
                 <div className="col-8">
                     <div className="fw-bold">{who.userName} <i className="fw bi-check-circle-fill d-inline"></i> </div>

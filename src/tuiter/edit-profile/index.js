@@ -6,10 +6,6 @@ import {updateProfile} from "../profile/profile-reducer";
 const EditProfile = () => {
     const dispatch = useDispatch();
 
-    const saveFormHandler = () => {
-
-    }
-
     const profile = useSelector(state => state.profile);
     let [currInfo, setCurrInfo] = useState(profile);
 
