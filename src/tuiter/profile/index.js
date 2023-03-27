@@ -25,7 +25,7 @@ const ProfileComponent = () => {
             <div className="bg-white pt-5  d-block">
                 <div className="ms-5 mb-0">
                     <h4 className="m-0">{profile.firstName + " " + profile.lastName}</h4>
-                    <span className="small text-muted mb-0">{profile.handle}</span>
+                    <span className="small text-muted mb-0">{profile.handle}</span> <span className="small text-muted mb-0">- {profile.website}</span>
                 </div>
                 <br/>
                 <p className="small w-100 mt-0 ps-5 pe-5">
@@ -43,7 +43,7 @@ const ProfileComponent = () => {
                         </div>
                         <div>
                             <i className="bi bi-balloon fst-normal bi-calendar"></i>
-                            <p className="d-inline">Joined on {profile.dateJoined}</p>
+                            <p className="d-inline">Joined in {profile.dateJoined}</p>
                         </div>
                     </div>
 
