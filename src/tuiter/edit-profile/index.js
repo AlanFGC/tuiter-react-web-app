@@ -11,7 +11,6 @@ const EditProfile = () => {
 
     function onChangeHandler(info){
         setCurrInfo({...currInfo, ...info})
-
     }
     function onClickHandler(){
         alert("Changes were saved " + currInfo.firstName);
