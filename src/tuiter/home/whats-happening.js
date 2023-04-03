@@ -8,7 +8,13 @@ const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const tuitClickHandler = () => {
         const newTuit = {
-            tuit: whatsHappening
+
+            tuit: whatsHappening,
+            handle: "@me",
+            time: "now",
+            image: "null",
+            title: "mytweet",
+            liked: true, likes: 2345, disliked: true, dislikes: 0, replies: 0, retuits: 0
         }
         dispatch(createTuitThunk(newTuit));
     }

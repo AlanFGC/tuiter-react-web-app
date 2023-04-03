@@ -2,7 +2,10 @@ import React from "react";
 import PostSummaryItem from "./post-summary-list-item";
 import {useSelector} from "react-redux";
 const PostSummaryList = () => {
-    const postsArray = useSelector(state => state.tuits);
+    let postsArray = useSelector(state => state.tuits);
+    if (!postsArray){
+        return(<h1>SERVICE NOT AVAILABLE</h1>);
+    }
     return(
         <ul className="list-group">
             {

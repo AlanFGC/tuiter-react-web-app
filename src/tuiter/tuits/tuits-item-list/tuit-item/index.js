@@ -23,7 +23,7 @@ const TuitItem = (props) => {
                     <p className="d-inline fw-bold ">{item.topic} </p>
                     <i className="bi bi-check-circle-fill"></i>
 
-                    <p className="d-inline text-muted fs-6"> @{item.handle}</p>
+                    <p className="d-inline text-muted fs-6"> {item.handle}</p>
                     <p className="d-inline text-muted fs-6"> -{item.time}</p><br/>
                     <p className="d-inline">{item.tuit}</p>
                 </div>
