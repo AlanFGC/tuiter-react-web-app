@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tuits from './tuits.json';
 
 import {deleteTuitThunk, findTuitsThunk, createTuitThunk, updateTuitThunk}
     from "../services/tuits-thunks";
@@ -10,7 +9,7 @@ const currentUser = {
     "image": "telegram.png",
 };
 
-const templateTuit = {
+export const templateTuit = {
     ...currentUser,
     "topic": "Space",
     "time": "2h",
@@ -18,6 +17,8 @@ const templateTuit = {
     "replies": 0,
     "retuits": 0,
     "likes": 0,
+    "disliked": false,
+    "dislikes": 0
 }
 
 const initialState = {
