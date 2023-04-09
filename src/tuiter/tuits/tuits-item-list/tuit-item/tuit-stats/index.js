@@ -28,7 +28,7 @@ const TuitStats = (props) => {
                 Likes: {item.dislikes}
                 <i onClick={() => dispatch(
 
-                    updateTuitThunk({...item, dislikes: item.dislikes + 1, disliked: true})
+                    updateTuitThunk({...item, dislikes: item.dislikes+1, disliked: true})
 
                 )} className="bi bi-hand-thumbs-down me-2 d-inline"></i>
             </div>

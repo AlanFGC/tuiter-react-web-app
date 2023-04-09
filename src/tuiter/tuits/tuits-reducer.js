@@ -3,14 +3,16 @@ import { createSlice } from "@reduxjs/toolkit";
 import {deleteTuitThunk, findTuitsThunk, createTuitThunk, updateTuitThunk}
     from "../services/tuits-thunks";
 
-const currentUser = {
+export const currentUser = {
     "userName": "NASA",
     "handle": "@nasa",
     "image": "telegram.png",
 };
 
 export const templateTuit = {
-    ...currentUser,
+    "userName": "NASA",
+    "handle": "@nasa",
+    "image": "telegram.png",
     "topic": "Space",
     "time": "2h",
     "liked": false,
